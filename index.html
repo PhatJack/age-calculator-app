@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="stylesheet" href="./src/output.css">
+
+	<title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body class="w-full h-full bg-off-white">
+	<main class="w-full h-screen flex justify-center items-center">
+		<div class="w-[700px] h-fit bg-white rounded-t-3xl rounded-bl-3xl rounded-br-[10em] hover:shadow-lg transition-shadow">
+			<div class="p-7 md:p-14">
+				<div class="w-full flex flex-col text-smokey-grey relative">
+					<form id="form" class="w-full flex items-start gap-5 pb-10 border-b relative">
+						<div class="w-fit flex flex-col gap-1 relative">
+							<span id="text-day" class="uppercase text-sm font-poppins-bold tracking-widest">day</span>
+							<input type="number" placeholder="DD" name="day" id=""
+								class="w-custom-width appearance-none text-black text-2xl font-poppins-extrabold px-4 py-3 border rounded-md placeholder:text-2xl placeholder:font-poppins-extrabold placeholder:text-smokey-grey">
+							<p id="day-error-msg" class="font-poppins-italic text-[12px] text-red-400 absolute -bottom-6 hidden">This field is required</p>
+						</div>
+						<div class="w-fit flex flex-col gap-1 relative">
+							<span id="text-month" class="uppercase text-sm font-poppins-bold tracking-widest">month</span>
+							<input type="number" placeholder="MM" name="month" id=""
+								class="w-custom-width appearance-none text-black text-2xl font-poppins-extrabold px-4 py-3 border rounded-md placeholder:text-2xl placeholder:font-poppins-extrabold placeholder:text-smokey-grey">
+							<p id="month-error-msg" class="font-poppins-italic text-[12px] text-red-400 absolute -bottom-6 hidden">This field is required</p>
+						</div>
+						<div class="w-fit flex flex-col gap-1 relative">
+							<span id="text-year" class="uppercase text-sm font-poppins-bold tracking-widest">year</span>
+							<input type="number" placeholder="YYYY" name="year" id=""
+								class="w-custom-width appearance-none text-black text-2xl font-poppins-extrabold px-4 py-3 border rounded-md placeholder:text-2xl placeholder:font-poppins-extrabold placeholder:text-smokey-grey">
+							<p id="year-error-msg" class="font-poppins-italic text-[12px] text-red-400 absolute -bottom-6 hidden">This field is required</p>
+						</div>
+						<button type="submit"
+							class="absolute -bottom-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-[90%]  bg-purple w-fit p-4 rounded-full transition-all hover:bg-black cursor-pointer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+								<g fill="none" stroke="#FFF" stroke-width="2">
+									<path
+										d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+								</g>
+							</svg>
+						</button>
+					</form>
+					<div class="flex flex-col my-10 md:mt-5 md:mb-0">
+						<div class="flex gap-2 text-[70px] leading-tight">
+							<span class="text-purple font-poppins-extraboldItalic" id="yearsResult">- -</span>
+							<span class="font-poppins-extraboldItalic text-black">years</span>
+						</div>
+						<div class="flex gap-2 text-[70px] leading-tight">
+							<span class="text-purple font-poppins-extraboldItalic" id="monthsResult">- -</span>
+							<span class="font-poppins-extraboldItalic text-black">months</span>
+						</div>
+						<div class="flex gap-2 text-[70px] leading-tight">
+							<span class="text-purple font-poppins-extraboldItalic" id="daysResult">- -</span>
+							<span class="font-poppins-extraboldItalic text-black">days</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script src="./index.js"></script>
+</html>
